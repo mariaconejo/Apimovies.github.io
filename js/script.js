@@ -17,11 +17,11 @@ function addMovies(movies) {
 
     const content = `
       <div class="left">
-        <img src="${movies[i].image}" alt="Foto de ${movies[i].name}" />
+        <img src="${movies[i].poster}" alt="Foto de ${movies[i].title}" />
       </div>
       <div class="right">
-        <h2 class="character-name">${movies[i].name}</h2>
-        <p>${movies[i].species}</p>
+        <h2 class="movie-name">${movies[i].title}</h2>
+        <p>${movies[i].year}</p>
       </div>
     `;
     listItem.innerHTML = content;
@@ -31,18 +31,18 @@ function addMovies(movies) {
 function searchMovie(search){
   const buscador = document.getElementById('searchterm');
   buscador.innerHTML = '';
-  for (let i = 0; i < movies.length; i += 1){
+  for (let i = 0; i < search.length; i += 1){
 
     const listItem = document.createElement('li');
-    movieList.appendChild(listItem);
+    buscador.appendChild(listItem);
 
     const content = `
       <div class="left">
-        <img src="${movies[i].image}" alt="Foto de ${movies[i].name}" />
+        <img src="${search[i].poster}" alt="Foto de ${search[i].title}" />
       </div>
       <div class="right">
-        <h2 class="character-name">${movies[i].name}</h2>
-        <p>${movies[i].species}</p>
+        <h2 class="movie-name">${search[i].title}</h2>
+        <p>${search[i].year}</p>
       </div>
     `;
     listItem.innerHTML = content;
