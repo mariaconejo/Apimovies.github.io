@@ -52,3 +52,23 @@ h1{
   color:white;
   border:none;
 }
+
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.movie-list {
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style-type: none; }
+  .movie-list li {
+    display: flex;
+    background-color: #34495e;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 20px; }
+  .movie-list .left {
+    max-width: 200px;
+    margin-right: 2rem; }

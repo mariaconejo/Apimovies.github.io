@@ -3,72 +3,35 @@
 //
 
 function addMovies(movies) {
-
   const movieList = document.getElementById('movie-list');
 
-  movieList.innerHTML = '';
-
-  window.scroll(0, 0);
-
   for (let i = 0; i < movies.length; i += 1) {
-
-    const listItem = document.createElement('li');
-    movieList.appendChild(listItem);
-
-    const content = `
-      <div class="left">
-        <img src="${movies[i].poster}" alt="Foto de ${movies[i].title}" />
-      </div>
-      <div class="right">
-        <h2 class="movie-name">${movies[i].title}</h2>
-        <p>${movies[i].year}</p>
-      </div>
-    `;
-    listItem.innerHTML = content;
-  }
-}
-
-function searchMovie(search){
-  const buscador = document.getElementById('searchterm');
-  buscador.innerHTML = '';
-  for (let i = 0; i < search.length; i += 1){
-
-    const listItem = document.createElement('li');
-    buscador.appendChild(listItem);
+    const movieItem = document.createElement('li');
+    movieList.appendChild(movieItem);
 
     const content = `
       <div class="left">
-        <img src="${search[i].poster}" alt="Foto de ${search[i].title}" />
+        <img src="${movies[i].Poster}" alt="Foto de ${movies[i].Title}"/>
       </div>
       <div class="right">
-        <h2 class="movie-name">${search[i].title}</h2>
-        <p>${search[i].year}</p>
+        <h2 class="character-name">${movies[i].Title}</h2>
+        <p>${movies[i].Year}</p>
+        <p>${movies[i].imdbID}</p>
       </div>
     `;
-    listItem.innerHTML = content;
-
+    movieItem.innerHTML = content;
   }
-
-
-
 }
 
-// Conexión al API usando fetch buscador
-fetch('http://www.omdbapi.com/?apikey=c6fbafc9&s=hola')
+fetch('http://www.omdbapi.com/?apikey=c6fbafc9&s=anime')
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
-    // Add characters to list.
-    addMovies(data.results);
+    addMovies(data.Search);
   });
 
-
-// Conexión al API usando fetch buscador
-fetch('http://www.omdbapi.com/?apikey=c6fbafc9&i=tt0113312')
+fetch('http://www.omdbapi.com/?apikey=c6fbafc9&i=tt0829442')
   .then((response) => response.json())
   .then((data) => {
+    addMovies(data.imdbID);
     console.log(data);
-    // Add characters to list.
-    searchMovie(data.results);
   });
-
