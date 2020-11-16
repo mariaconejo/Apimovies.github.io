@@ -53,22 +53,59 @@ h1{
   border:none;
 }
 
+body{
+  font-family: 'Rock Salt', cursive;
+  font-size: 16px;
+  margin: 0 auto;
+  color: white;
+  background-color: #96043e;
+  margin: 0 auto;
+}
 
-img {
-  max-width: 100%;
-  height: auto; }
+.wrapper{
+  width: 480px;
+  height: auto;
+  margin: 0 auto;
+}
 
-.movie-list {
-  margin: 0 0 2rem;
-  padding: 0;
-  list-style-type: none; }
-  .movie-list li {
-    display: flex;
-    background-color: #34495e;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    color: white;
-    font-size: 20px; }
-  .movie-list .left {
-    max-width: 200px;
-    margin-right: 2rem; }
+img{
+  width: 300px;
+  height: 300px;
+}
+
+.info{
+  padding: 0 18px;
+  background-color: #96043e;
+  display: none;
+  width: 400px;
+  text-align: center;
+  border: 4px solid black;
+  border-radius: 10px;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.acordeon{
+  font-family: 'Rock Salt', cursive;
+  background-color: #5b1647;
+  color: white;
+  border: 4px solid black;
+  font-weight: bold;
+  transition: 0.4s;
+  width: 445px;
+  text-align: center;
+  font-size: 18px;
+  float: left;
+  border-radius: 10px;
+  display: block;
+}
+
+.acordeon:hover{
+  background-color:#ffa228;
+}
+
+
