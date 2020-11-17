@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maria's Movie Center</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <h1>Maria's Movie Center</h1>
-  <form class="field" id="searchform">
-    <input type="text" id="searchterm" placeholder="Buscar"/>
-    <button type="submit" id="search">Buscar</button>
-  </form>
-  <ul id="movie-list" class="movie-list"></ul>
-  <script src="js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria's Movie Center</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <body>
+    <h1>Maria's Movie Center</h1>
+    <form class="field" id="searchform">
+      <input type="text" id="searchterm" placeholder="Buscar"/>
+      <button type="submit" id="search">Buscar</button>
+    </form>
+    <div class="list">
+      <div class="list-item clearfix">
+        <ul id="movie-list" class="movie-list"></ul>
+      </div>
+      <div class="boton clearfix">
+        <button id="load-more" class="button">Cargar más</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>@
+  </body>
 </html

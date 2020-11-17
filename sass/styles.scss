@@ -1,5 +1,6 @@
-$heading-color: #00f;
-
-h1 {
-  color: $heading-color;
-}
+@import'./config/settings';
+@import'./config/globales';
+@import'./partials/buscador';
+@import'./partials/acordion';
+@import'./partials/tooltip';
+@import'./partials/boton';

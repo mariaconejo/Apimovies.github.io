@@ -1,111 +1,154 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
-
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 * {
-    margin:0;
-    padding:0;
-    font:12pt Arial;
-}
+  margin: 0;
+  padding: 0;
+  font-family: "Righteous", cursive; }
 
-h1{
-  text-align: center;
-  text-transform: uppercase;
-  color: #34495e;
-  font-weight: bold;
-  padding-top: 56px;
-  font-family: 'Montserrat Alternates';
-  font-size: 50px;
-
-}
-
-.field {
-    display:flex;
-    position:realtive;
-    margin:5em auto;
-    width:70%;
-    flex-direction:row;
-    box-shadow:
-    1px 1px 0 rgb(22, 160, 133),
-    2px 2px 0 rgb(22, 160, 133),
-    3px 3px 0 rgb(22, 160, 133),
-    4px 4px 0 rgb(22, 160, 133),
-    5px 5px 0 rgb(22, 160, 133),
-    6px 6px 0 rgb(22, 160, 133),
-    7px 7px 0 rgb(22, 160, 133)
-    ;
-}
-
-.field>input[type=text],
-.field>button {
-    display:block;
-    font:1.2em 'Montserrat Alternates';
-}
-
-.field>input[type=text] {
-  flex:1;
-  padding:0.6em;
-  border:0.2em solid rgb(26, 188, 156);
-}
-
-.field>button {
-  padding:0.6em 0.8em;
-  background-color:rgb(26, 188, 156);
-  color:white;
-  border:none;
-}
-
-body{
-  font-family: 'Rock Salt', cursive;
-  font-size: 16px;
-  margin: 0 auto;
-  color: white;
-  background-color: #96043e;
-  margin: 0 auto;
-}
-
-.wrapper{
-  width: 480px;
-  height: auto;
-  margin: 0 auto;
-}
-
-img{
-  width: 300px;
-  height: 300px;
-}
-
-.info{
-  padding: 0 18px;
-  background-color: #96043e;
-  display: none;
-  width: 400px;
-  text-align: center;
-  border: 4px solid black;
-  border-radius: 10px;
-}
-
-.clearfix::after{
+.clearfix::after {
   content: "";
   clear: both;
-  display: table;
-}
+  display: table; }
 
-.acordeon{
-  font-family: 'Rock Salt', cursive;
-  background-color: #5b1647;
-  color: white;
-  border: 4px solid black;
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  padding-top: 56px;
+  font-size: 50px; }
+
+.field {
+  display: flex;
+  position: realtive;
+  margin: 5em auto;
+  width: 70%;
+  flex-direction: row;
+  box-shadow: 1px 1px 0 #ff5acd, 2px 2px 0 #fbda61, 3px 3px 0 #ff5acd, 4px 4px 0 #fbda61, 5px 5px 0 #ff5acd, 6px 6px 0 #fbda61 7px 7px 0 #ff5acd; }
+
+.field > input[type=text],
+.field > button {
+  display: block; }
+
+.field > input[type=text] {
+  flex: 1;
+  padding: 0.6em;
+  border: 0.2em solid #fbda61; }
+
+.field > button {
+  padding: 0.6em 0.8em;
+  background: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+  color: black;
+  border: none; }
+
+body {
+  font-size: 16px;
+  margin: 0 auto;
+  background: black; }
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto; }
+
+img {
+  padding-top: 20px;
+  width: 250px;
+  height: 300px; }
+
+.info {
+  padding-left: 30px;
+  padding-bottom: 150px;
+  padding-top: 20px;
+  background-color: #fff2c3;
+  display: none;
+  width: 988px;
+  text-align: left;
+  border: 1px solid #FBDA61; }
+
+.Imagen_1 {
+  float: left;
+  margin-right: 50px; }
+
+.detalles p {
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-top: 10px; }
+
+.acordeon {
+  background: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 23px;
+  color: black;
+  border: 1px solid #FBDA61;
   font-weight: bold;
   transition: 0.4s;
-  width: 445px;
+  width: 1020px;
   text-align: center;
   font-size: 18px;
   float: left;
-  border-radius: 10px;
-  display: block;
-}
+  display: block; }
 
-.acordeon:hover{
-  background-color:#ffa228;
-}
+.acordeon:hover {
+  background: linear-gradient(45deg, #FF5ACD 0%, #FBDA61 100%);
+  color: white;
+  transition: 0.5s; }
 
+.tooltip {
+  margin-top: 20px;
+  text-decoration: underline;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #fb95dd;
+  color: #fb69d0; }
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #fd9ee1;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 18px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 25%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s; }
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fd9ee1 transparent transparent transparent; }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1; }
+
+#load-more {
+  background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%); }
+
+#load-more {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  border: none;
+  display: block; }
+
+#load-more:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: white;
+  text-decoration: none; }

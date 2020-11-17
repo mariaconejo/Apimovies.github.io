@@ -1,0 +1,57 @@
+body {
+  font-size: 16px;
+  margin: 0 auto;
+  background: $font-color; }
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto }
+
+img {
+  padding-top: 20px;
+  width: 250px;
+  height: 300px; }
+
+.info {
+  padding-left: 30px;
+  padding-bottom: 150px;
+  padding-top: 20px;
+  background-color: $background-acordion;
+  display: none;
+  width: 988px;
+  text-align: left;
+  border: 1px solid $yellow}
+
+.Imagen_1{
+  float: left;
+  margin-right: 50px;
+}
+
+.detalles p{
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+
+.acordeon{
+  background: $gradiente;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 23px;
+  color: $font-color;
+  border: 1px solid $yellow;
+  font-weight: bold;
+  transition: 0.4s;
+  width: 1020px;
+  text-align: center;
+  font-size: 18px;
+  float: left;
+  display: block;
+}
+
+.acordeon:hover{
+  background: $gradiente-hover;
+  color: $hover;
+  transition: 0.5s;
+}

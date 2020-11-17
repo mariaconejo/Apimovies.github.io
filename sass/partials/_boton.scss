@@ -1,0 +1,20 @@
+#load-more {
+  background-image: $gradiente;
+}
+#load-more {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: $font-color;
+  border: none;
+  display: block;
+}
+
+#load-more:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: $hover;
+  text-decoration: none;
+}

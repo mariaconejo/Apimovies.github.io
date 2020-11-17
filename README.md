@@ -2,11 +2,6 @@
 
 ## Requerimientos
 
-* Node.js 12.x o superior
+Api de peliculas 
 
-## Uso
 
-```
-npm install
-npm run dev
-```

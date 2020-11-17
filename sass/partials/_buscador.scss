@@ -1,0 +1,47 @@
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  background: $gradient-text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  padding-top: 56px;
+  font-size: 50px;
+
+}
+
+.field {
+  display:flex;
+  position:realtive;
+  margin:5em auto;
+  width:70%;
+  flex-direction:row;
+  box-shadow:
+  1px 1px 0 $pink-rgb,
+  2px 2px 0 $yellow-rgb,
+  3px 3px 0 $pink-rgb,
+  4px 4px 0 $yellow-rgb,
+  5px 5px 0 $pink-rgb,
+  6px 6px 0 $yellow-rgb
+  7px 7px 0 $pink-rgb
+  ;
+}
+
+.field>input[type=text],
+.field>button {
+  display:block;
+}
+
+.field>input[type=text] {
+flex:1;
+padding:0.6em;
+border:0.2em solid $yellow-rgb,
+}
+
+.field>button {
+padding:0.6em 0.8em;
+background: $gradiente;
+color: $font-color;
+border:none;
+}
