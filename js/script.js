@@ -22,7 +22,7 @@ function addCartelera(movies) {
         const content = `
             <!--Acordion-->
             <div class="wrapper clearfix">
-              <button class="acordeon">${data.Title}</button>
+              <button class="acordeon" id="${movies[i].imdbID}">${data.Title}</button>
               <div class="info">
                 <img class="Imagen_1" src="${data.Poster}" alt="${data.Title}">
                 <div class="detalles">
@@ -43,8 +43,9 @@ function addCartelera(movies) {
         // Codigo del acordeon recopilado de una tarea de la clase de Diseño Web
         // url de la tarea : https://github.com/mariaconejo/herramientas/tree/master/acordion
         // se elimino el for el codigo del acordion por ser inecesario dos for
-        const acordeon = document.querySelectorAll('.acordeon');
-        acordeon[i].addEventListener('click', (event) => {
+        // se llamo al id de las peliculas dentro del document.getelementById
+        const acordeon = document.getElementById(`${movies[i].imdbID}`);
+        acordeon.addEventListener('click', (event) => {
           event.preventDefault();
           const elemento = event.currentTarget;
           const info = elemento.nextElementSibling;
